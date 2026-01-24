@@ -1,0 +1,11 @@
+{
+  "graphs": {
+    "data_ingestion":"app.data_ingestion.graph.data_ingestion_graph:build_ingestion_graph",
+    "Email_agent":"app.agent.graph.agent_graph:build_email_graph"
+  },
+  "env":".env",
+  "dependencies": [
+    "langgraph",
+    "langchain"
+  ]
+}
