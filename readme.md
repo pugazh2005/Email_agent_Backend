@@ -59,18 +59,7 @@ LANGFUSE_BASE_URL=...
 - App tables create on first use via SQLAlchemy models.
 - LangGraph checkpoint tables: run the helper script once (below).
 
-### Initialize LangGraph checkpoint tables (Postgres)
-python_ex.py runs AsyncPostgresSaver.setup() (Windows-safe loop policy):
-```bash
-python python_ex.py
-```
-Creates:
-- checkpoints
-- checkpoint_writes
-- checkpoint_blobs
-- checkpoint_migrations
 
-If schema mismatch occurs, drop these tables and rerun the script.
 
 ## Run the Service
 ```bash
