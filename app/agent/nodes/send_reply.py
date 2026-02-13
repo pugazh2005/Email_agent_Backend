@@ -33,7 +33,7 @@ async def send_reply(state: EmailAgentState) -> EmailAgentState:
             await db.commit()
             return {
                     "final_response": final_text,
-                    "send_reply_message": None,
+                    "send_reply_message": "Email sent successfully",
                 }
     except Exception as e:
         async with async_session_maker() as db:
